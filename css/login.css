@@ -1,0 +1,255 @@
+body,ul,li,dl,dd,dt,p,i,h1,h2,h3,h4,h5,h6{padding: 0;margin: 0;list-style: none;font-style: normal;
+    font-family: "微软雅黑"
+}
+a{
+    text-decoration: none;color: #000
+}
+
+
+body{
+    background-color: #101013;
+}
+#header{
+    width: 100%;
+    height: 80px;
+    background-color: #17191A;
+}
+.headerCont{
+    width: 1200px;
+    margin: 0 auto;
+}
+.headerCont li{
+    float: left;
+    width: 148px;
+    height: 100%;
+    line-height: 80px;
+    border-left: 1px solid #030000;
+    text-align: center;
+}
+.headerCont li:hover{
+    background: #232121;
+}
+.headerCont li:nth-child(4):hover{
+    background:none !important;
+}
+.headerCont li>a{
+    font-size: 16px;color: #9ba5b2;
+    display: inline-block;
+}
+#S_logo{
+    width: 303px;height: 80px;
+}
+#S_logo img{
+    position: relative;
+    top: 0px;
+    left: 0;
+    margin: auto;
+    right: 0;
+    z-index: 99999;
+}
+.btns{
+    text-align: unset;
+    width: 148px !important;
+}
+.btns a{
+    width: 74px !important;
+    text-align: center;
+    float: left;
+}
+.register{
+ background-color: #DA5B00;
+ color: #fff !important;
+}
+
+
+
+
+/* main */
+#main{
+    margin: 0 auto;
+    width: 1200px;
+    background-color: #141414;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    padding: 30px 40px; 
+    box-sizing: border-box;
+}
+
+.login{
+    width: 400px;
+}
+#main h3{
+    font-weight: normal;
+    border-bottom: 1px solid #2D2D2D;
+    text-align: center;
+    font-size: 24px;color: #D15701;
+    padding-bottom: 30px;
+}
+#login{
+    width: 500px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+#login li{
+    margin: 32px 0;
+}
+#login li>p{
+    font-size: 16px;
+    color: #999999;
+    display: inline-block;
+    margin-right: 5px;
+}
+#login li>input{
+    width: 386px;
+    height: 48px;
+    border: 1px solid #999999;
+    background-color: #141414;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #fff;    padding: 10px 35px;
+}
+input::-webkit-input-placeholder {
+	color: #666666;
+}
+input:-ms-input-placeholder { 
+	color: #666666;
+}
+input:-moz-placeholder { 
+	color: #666666;
+}
+input::-moz-placeholder { 
+	color: #666666;
+}
+
+
+
+#yzm{
+    width: 223px !important;
+}
+.dtyzm{
+    display: inline-block;
+    width: 157px;
+    height: 48px;
+    float: right;
+    position: relative;
+    left: -25px;
+    background: url(../images/yzm.png) no-repeat center;
+    background-size: cover;
+    cursor:pointer
+}
+.dtyzm img{
+    width: 100%;
+    height: 100%;
+}
+.bg1{
+    background: url(../images/yzm.png) no-repeat center;
+    background-size: cover;
+}
+.bg2{
+    background: url(../images/yzm01.png) no-repeat center;
+    background-size: cover;
+}
+
+.forget a{
+    display: inline-block;
+    font-size: 14px;
+    color: #DA5B00;
+    float: right;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+#btninfos{
+    width: 388px;
+    height: 48px;
+    border: 4px solid rgba(201, 49, 0, 0.4);
+    background: #DA5B00;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin-left: 87px;
+    margin-top: 55px;
+}
+
+.Register a{
+    font-size: 14px;
+    color: #DA5B00;  
+    text-decoration: underline; 
+    margin-left: 55px;
+}
+#login .iconfont{
+    color: #666666;
+    position: relative;
+    left: 33px;top: 3px;
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:22px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'iconfont';  /* project id 568667 */
+    src: url('https://at.alicdn.com/t/font_568667_ypu5c8qwnib2o6r.eot');
+    src: url('https://at.alicdn.com/t/font_568667_ypu5c8qwnib2o6r.eot?#iefix') format('embedded-opentype'),
+    url('https://at.alicdn.com/t/font_568667_ypu5c8qwnib2o6r.woff') format('woff'),
+    url('https://at.alicdn.com/t/font_568667_ypu5c8qwnib2o6r.ttf') format('truetype'),
+    url('https://at.alicdn.com/t/font_568667_ypu5c8qwnib2o6r.svg#iconfont') format('svg');
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- */
+/* footer */
+    #footer{
+        width: 100%;
+        background-color: #000;
+        height: 110px;
+
+    }
+    .footerCont{
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 24px 0;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .footerCont .L{
+        display: inline-block;
+        width: 123px;
+        height: 100%;
+        float: left;    margin-left: 100px;
+    }
+    .footerCont .R{ 
+        margin-left: 40px;
+        /* width: 123px; */
+        height: 100%;
+        float: left;
+    }
+    .footerCont li{
+        font-size: 14px;
+    }
+
+
+
+
+
+

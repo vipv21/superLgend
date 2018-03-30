@@ -1,0 +1,197 @@
+body,ul,li,dl,dd,dt,p,i,h1,h2,h3,h4,h5,h6{padding: 0;margin: 0;list-style: none;font-style: normal;
+    font-family: "微软雅黑"
+}
+a{
+    text-decoration: none;color: #000
+}
+
+
+body{
+    background-color: #101013;
+}
+#header{
+    width: 100%;
+    height: 80px;
+    background-color: #17191A;
+}
+.headerCont{
+    width: 1200px;
+    margin: 0 auto;
+}
+.headerCont li{
+    float: left;
+    width: 148px;
+    height: 100%;
+    line-height: 80px;
+    border-left: 1px solid #030000;
+    text-align: center;
+}
+.headerCont li:hover{
+    background: #232121;
+}
+.headerCont li:nth-child(4):hover{
+    background:none !important;
+}
+.headerCont li>a{
+    font-size: 16px;color: #9ba5b2;
+    display: inline-block;
+    /* width: 100%; */
+}
+#S_logo{
+    width: 303px;height: 80px;
+}
+#S_logo img{
+    position: relative;
+    top: 0px;
+    left: 0;
+    margin: auto;
+    right: 0;
+    z-index: 99999;
+}
+.btns{
+    text-align: unset;
+    width: 148px !important;
+}
+.btns a{
+    width: 74px !important;
+    text-align: center;
+    float: left;
+}
+.register{
+ background-color: #DA5B00;
+ color: #fff !important;
+}
+
+
+/* main */
+#main{
+    margin: 0 auto;
+    width: 1200px;
+    background-color: #101013;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+.gameL{
+    display: inline-block;
+    width:330px; 
+}
+.gameL_01{
+    height: 150px;
+    margin-bottom: 25px;
+}
+.gameL_02{
+    height: 618px;
+}
+
+
+.gameR{
+    float: right;
+    width: 850px;height: 792px;
+    background-color: #141414;
+    padding: 40px 50px;
+    box-sizing: border-box;
+}
+.gameR h3{
+    font-size: 24px;
+    color: #DA5B00;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #2D2D2D;
+}
+.infoss h5{
+    line-height: 2;
+    font-size: 16px;
+    color: #999999;
+    margin-top: 60px;
+}
+.infoss h5>span{
+    font-size: 16px;
+    color: #DA5B00;
+}
+.infoss {
+    padding-left: 50px;
+}
+.infoss li{
+    margin: 32px 0;
+}
+.infoss li>p{
+    font-size: 16px;
+    color: #999999;
+    display: inline-block;
+    margin-right: 30px;
+}
+.infoss li>input{
+    width: 388px;
+    height: 48px;
+    border: 1px solid #999999;
+    background-color: #141414;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #fff;
+}
+.pricenum label{
+    color: #DA5B00;
+    margin-right: 30px;
+}
+.Pay{
+    color: #999999;
+}
+button{
+    width: 378px;
+    height: 48px;
+    border: 4px solid rgba(201, 49, 0, 0.4);
+    background: #DA5B00;
+    outline: none;
+    font-size: 16px;color: #fff;
+    text-align: center;
+    margin-left: 110px;
+}
+
+
+
+
+
+
+
+
+
+
+/* ---------------------- */
+/* footer */
+    #footer{
+        width: 100%;
+        background-color: #000;
+        height: 110px;
+
+    }
+    .footerCont{
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 24px 0;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .footerCont .L{
+        display: inline-block;
+        width: 123px;
+        height: 100%;
+        float: left;    margin-left: 100px;
+    }
+    .footerCont .R{ 
+        margin-left: 40px;
+        /* width: 123px; */
+        height: 100%;
+        float: left;
+    }
+    .footerCont li{
+        font-size: 14px;
+    }
+
+
+
+
+
+

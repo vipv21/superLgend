@@ -1,0 +1,280 @@
+body,ul,li,dl,dd,dt,p,i,h1,h2,h3,h4,h5,h6{padding: 0;margin: 0;list-style: none;font-style: normal;
+    font-family: "微软雅黑"
+}
+a{
+    text-decoration: none;color: #000
+}
+body{
+    background: #101013;
+}
+
+
+#header{
+    width: 100%;
+    height: 80px;
+    background-color: #17191A;
+}
+.headerCont{
+    width: 1200px;
+    margin: 0 auto;
+}
+.headerCont li{
+    float: left;
+    width: 148px;
+    height: 100%;
+    line-height: 80px;
+    border-left: 1px solid #030000;
+    text-align: center;
+}
+.headerCont li:hover{
+    background: #232121;
+}
+.headerCont li:nth-child(4):hover{
+    background:none !important;
+}
+.headerCont li>a{
+    font-size: 16px;color: #9ba5b2;
+    display: inline-block;
+    /* width: 100%; */
+}
+#S_logo{
+    width: 303px;height: 80px;
+}
+#S_logo img{
+    position: relative;
+    top: 0px;
+    left: 0;
+    margin: auto;
+    right: 0;
+    z-index: 99999;
+}
+.btns{
+    text-align: unset;
+    width: 148px !important;
+}
+.btns a{
+    width: 74px !important;
+    text-align: center;
+    float: left;
+}
+.register{
+ background-color: #DA5B00;
+ color: #fff !important;
+}
+
+
+
+
+/* main */
+/* #main{
+    width: 100%;
+    height:300px;
+} */
+ .banner{
+    width: 100%;
+    height:300px;
+    background: url(../images/gameBj.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+#main{
+    width: 100%;
+    background-color: #000;
+}
+.menubox{
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    background-color: #232526;
+}
+.menu{
+    /* float: left; */
+    margin: 0 auto;
+    width: 1200px;
+    height: 60px;
+
+}
+.menu li{
+    display: inline-block;
+    float: left;font-size: 16px;
+    color: #9BA5B2;
+    padding: 20px 37px;
+    vertical-align: middle;
+}
+.menu li:hover{
+    cursor:pointer;
+    color: #DA4B06;
+}
+.download{
+    width: 183px;
+    height: 50px;
+    background: url(../images/downloads.png) no-repeat center;
+    background-size: cover;
+    display: inline-block;
+    float: right;
+    margin: 5px 0;
+}
+.download a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+
+.content{
+    /* float: left; */
+    width: 100%;
+    background-color: #101013;
+    margin-top: 40px;
+}
+.content ul{
+    box-sizing: border-box;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #141414;
+}
+.content ul>h3{
+    font-size: 24px;
+    color: #DA5B00;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #2D2D2D;
+}
+
+.infos{
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 25px !important;
+}
+.infos p{
+    line-height: 1.8;
+    margin-top: 27px;
+}
+
+.btnss{
+    position: absolute;
+    margin: auto;
+    margin-top: 0 !important;
+    top: 195px;
+    left: 0;
+    width: 100%;text-align: center;
+}
+ .btnl,.btnr {
+    background-color: rgba(139, 139, 140, 0.18);
+    float: left;
+    opacity: 0.2;
+    width: 50px;
+    height: 100px;
+    line-height: 100px;
+    font-size: 50px;
+    color: rgba(204, 204, 204, 0.39);
+}
+
+.btnl{
+    float: left;
+}
+.btnr {
+    float: right;
+}
+.btnl:hover{
+    cursor:pointer;
+    opacity: 1;
+}
+.btnr:hover{
+    cursor:pointer;
+    opacity: 1;
+}
+
+#BoxUl{
+    width: 1120px;
+    height: 490px;
+    overflow: hidden;
+}
+.Box h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    padding-top: 250px;
+}
+.Box_con {
+    position: relative;
+    overflow: hidden;
+    top: 20px;
+}
+
+
+.Box .Box_con .btn {
+    display: block;
+    width: 41px;
+    height: 41px;
+    position: absolute;
+    top: 80px;
+    cursor: pointer;
+}
+.Box .Box_con .conbox {
+    position: relative;overflow: hidden;
+}
+.Box .Box_con .conbox ul {
+    position: relative;
+    list-style: none;
+}
+
+.Box .Box_con .conbox ul li {
+    float: left;
+    width: 1200px;
+    height: 200px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.Box .Box_con .conbox ul li:first-child {
+    margin-left: 0;
+}
+
+.Box .Box_con .conbox ul li img {
+    display: block;
+    width: 285px;
+    height: 200px;
+    transition: all 0.5s;
+}
+.Box .BoxSwitch {
+    margin-top: 30px;text-align: center;
+}
+
+
+/* footer */
+    #footer{
+        width: 100%;
+        background-color: #000;
+        height: 110px;
+
+    }
+    .footerCont{
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 24px 0;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .footerCont .L{
+        display: inline-block;
+        width: 123px;
+        height: 100%;
+        float: left;    margin-left: 100px;
+    }
+    .footerCont .R{ 
+        margin-left: 40px;
+        /* width: 123px; */
+        height: 100%;
+        float: left;
+    }
+    .footerCont li{
+        font-size: 14px;
+    }
+
+
+
+
+
+

@@ -1,0 +1,206 @@
+body,ul,li,dl,dd,dt,p,i,h1,h2,h3,h4,h5,h6{padding: 0;margin: 0;list-style: none;font-style: normal;
+    font-family: "微软雅黑"
+}
+a{
+    text-decoration: none;color: #000
+}
+body{
+    background: #101013;
+}
+
+
+#header{
+    width: 100%;
+    height: 80px;
+    background-color: #17191A;
+}
+.headerCont{
+    width: 1200px;
+    margin: 0 auto;
+}
+.headerCont li{
+    float: left;
+    width: 148px;
+    height: 100%;
+    line-height: 80px;
+    border-left: 1px solid #030000;
+    text-align: center;
+}
+.headerCont li:hover{
+    background: #232121;
+}
+.headerCont li:nth-child(4):hover{
+    background:none !important;
+}
+.headerCont li>a{
+    font-size: 16px;color: #9ba5b2;
+    display: inline-block;
+    /* width: 100%; */
+}
+#S_logo{
+    width: 303px;height: 80px;
+}
+#S_logo img{
+    position: relative;
+    top: 0px;
+    left: 0;
+    margin: auto;
+    right: 0;
+    z-index: 99999;
+}
+.btns{
+    text-align: unset;
+    width: 148px !important;
+}
+.btns a{
+    width: 74px !important;
+    text-align: center;
+    float: left;
+}
+.register{
+ background-color: #DA5B00;
+ color: #fff !important;
+}
+
+
+
+
+/* main */
+ .banner{
+    width: 100%;
+    height:300px;
+    background: url(../images/gameBj.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+#main{
+    width: 100%;
+    background-color: #000;
+}
+.menubox{
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    background-color: #232526;
+}
+.menu{
+    /* float: left; */
+    margin: 0 auto;
+    width: 1200px;
+    height: 60px;
+
+}
+.menu li{
+    display: inline-block;
+    float: left;font-size: 16px;
+    color: #9BA5B2;
+    padding: 20px 31px;
+    vertical-align: middle;
+}
+.menu li:hover{
+    cursor:pointer;
+    color: #DA5B00;
+}
+
+.content{
+    /* float: left; */
+    width: 100%;
+    background-color: #101013;
+    margin-top: 40px;
+}
+.content ul{
+    box-sizing: border-box;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #141414;
+}
+.content ul>h3{
+    font-weight: normal;
+    font-size: 24px;
+    color: #DA5B00;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #2D2D2D;
+}
+
+.infos{
+    font-size: 16px;
+    color: #666666;
+    margin-bottom: 25px !important;
+}
+.infos p{
+    line-height: 1.8;
+    margin-top: 27px;
+}
+
+.btnss{
+    position: relative;
+    top: -50px;
+    display: inline-block;
+    float: right;
+    margin :0 !important;
+    line-height: unset;
+
+}
+.btnss span{
+    width: 30px;
+    height: 25px;
+    display: inline-block;
+    background: red;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+
+.submitInfo a{
+    color: #DA5B00;
+}
+.appliMethod span{
+    color: #DA5B00;
+}
+.FAQ p{
+    padding-left: 25px;
+
+}
+
+/* footer */
+    #footer{
+        width: 100%;
+        background-color: #000;
+        height: 110px;
+
+    }
+    .footerCont{
+        width: 1200px;
+        height: 100%;
+        margin: 0 auto;
+        padding: 24px 0;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .footerCont .L{
+        display: inline-block;
+        width: 123px;
+        height: 100%;
+        float: left;    margin-left: 100px;
+    }
+    .footerCont .R{ 
+        margin-left: 40px;
+        /* width: 123px; */
+        height: 100%;
+        float: left;
+    }
+    .footerCont li{
+        font-size: 14px;
+    }
+
+
+
+
+
+

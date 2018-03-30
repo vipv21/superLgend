@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>沙城烟云-登录</title>
+		<script src="js/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/login.css" />
+		
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div id="header">
+				<ul class="headerCont">
+					<li><a href="./index.html">官网首页</a></li>
+					<li><a href="./GamesHub.html">游戏中心</a></li>
+					<li><a href="./Recharge.html">游戏充值</a></li>
+					<li id="S_logo">
+						<a href="./index.html">
+							<img src="./images/S_logo.png" alt="">
+						</a>
+					</li>
+					<li><a href="./Custody.html">家长监护</a></li>
+					<li><a href="./Contactus.html" >联系我们</a></li>
+					<li class="btns" style="text-align: unset;">
+						<a href="./Login.html" class="login"  style="color:#DA5B00;">登录</a>
+						<a href="./Register.html" class="register">注册</a>
+					</li>
+				</ul>
+			</div>
+		
+		
+		<!-- main -->
+		<div id="main">
+			<h3>登录</h3>
+			<ul id="login">
+				<li>
+					<p>用户名:</p>
+					<i class="iconfont">&#xe631;</i>
+					<input type="text" placeholder="请输入6-15位用户名" id="num"  maxlength="16" name="nickname">
+				</li>
+				<li>
+					<p>密码:&nbsp;&nbsp;&nbsp;</p>
+					<i class="iconfont">&#xe62a;</i>
+					<input type="password" placeholder="请输入6-15位密码" id="password" maxlength="15" name="paswrd">
+				</li>
+				<li style="margin-bottom: 0;">
+					<p>验证码:</p>
+					<i class="iconfont">&#xe6a0;</i>
+					<input type="text" placeholder="请输入验证码" id="yzm" maxlength="6" name="code">
+					<span class="dtyzm"></span>
+				</li>
+				<!-- <p class="forget">
+					<a href="">忘记密码？</a>
+				</p> -->
+				<li>
+					<button id="btninfos">登录</button>
+				</li>
+				<p class="Register" style="text-align: center;">
+					<a href="./Register.html">还没账号，立即注册</a>
+				</p>
+			</ul>
+			
+		</div>
+		
+		<!-- footer -->
+		<div id="footer">
+			<div class="footerCont">
+				<ul class="L">
+					<img src="./images/S_icon1.png" alt="">
+				</ul>
+				<ul class="R">
+					<li style="color:#8c95a1">
+						<span style="color:red"> 本公司游戏产品适合18岁以上成年人使用。 </span> &nbsp;&nbsp;&nbsp;&nbsp;客服热线： (0571)8509-6870 &nbsp;&nbsp;罗女士
+					</li>
+					<li style="color:#606060">
+						COPYRIGHT © 2017 – 2018 SUPERTECH. ALL RIGHTS RESERVED。<span style="color:#8c95a1">浙ICP备18003397号 杭州市余杭区仓前海创大厦A幢802 </span> 
+					</li>
+					<li style="color:#606060">
+						抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防上当受骗。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+
+		
+	</body>
+<script>
+$(function(){
+	$('#btninfos').click(function(){
+		var nickname = $('input[name=nickname]').val();
+		var paswrd = $('input[name=paswrd]').val();
+		var conf = $('input[name=conf]').val();
+		var code = $('input[name=code]').val();
+		if(nickname == ''){
+			alert('用户名不能为空');
+			$('input[name=nickname]').addClass('error').focus();
+			return false;
+		}else{
+			$('input[name=nickname]').removeClass('error').focus();
+		}
+
+		if(paswrd == ''){
+			alert('密码不能为空');
+			$('input[name=paswrd]').addClass('error').focus();
+			return false;
+		}else{
+			$('input[name=paswrd]').removeClass('error').focus();
+		}
+
+		if(conf == ''){
+			alert('确认密码不能为空');
+			$('input[name=conf]').addClass('error').focus();
+			return false;
+		}else{
+			$('input[name=conf]').removeClass('error').focus();
+		}
+		if(code == ''){
+			alert('验证码不能为空');
+			$('input[name=code]').addClass('error').focus();
+			return false;
+		}else{
+			$('input[name=code]').removeClass('error').focus();
+		}
+		
+		alert('系统维护中！');
+	})
+
+	$('.dtyzm').addClass('bg1')
+	$('.dtyzm').click(function(){
+		$(this).toggleClass('bg1').toggleClass('bg2');
+	})
+
+
+})
+</script>
+</html>

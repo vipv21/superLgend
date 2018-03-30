@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>沙城烟云-注册</title>
+		<script src="js/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="" type="text/javascript" charset="utf-8"></script>
+
+		<link rel="stylesheet" href="css/register.css" />
+		
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div id="header">
+				<ul class="headerCont">
+					<li><a href="./index.html">官网首页</a></li>
+					<li><a href="./GamesHub.html">游戏中心</a></li>
+					<li><a href="./Recharge.html">游戏充值</a></li>
+					<li id="S_logo">
+						<a href="./index.html">
+							<img src="./images/S_logo.png" alt="">
+						</a>
+					</li>
+					<li><a href="./Custody.html">家长监护</a></li>
+					<li><a href="./Contactus.html"  >联系我们</a></li>
+					<li class="btns" style="text-align: unset;">
+						<a href="./Login.html" class="login">登录</a>
+						<a href="./Register.html" class="register">注册</a>
+					</li>
+				</ul>
+			</div>
+		
+		
+		<!-- main -->
+		<div id="main">
+			<h3>注册</h3>
+			<ul id="login">
+				<li>
+					<p>用户名:</p>
+					<input type="text" placeholder="请输入6-15位用户名" id="num"  maxlength="16" name='nickname'>
+				</li>
+				<li>
+					<p>密码:&nbsp;&nbsp;&nbsp;</p>
+					<input type="password" placeholder="请输入6-15位密码" id="password" maxlength="15" name='paswrd'>
+				</li>
+				<li>
+					<p style=" margin-right: 14px;">确认密码:</p>
+					<input type="password" placeholder="请再次输入密码" id="password2" maxlength="15" name='conf'>
+				</li>
+
+				<li>
+					<p  style=" margin-right: 14px;">真实姓名:</p>
+					<input type="text" placeholder="请输入真实姓名" id="xm" maxlength="15" name="realname">
+				</li>
+				<li>
+					<p style=" margin-right: 14px;">身份证号:</p>
+					<input type="text" placeholder="请输入身份证号" id="sfzh" maxlength="18" name='idcard'>
+				</li>
+
+				<li>
+					<p>手机号:</p>
+					<input type="tel" placeholder="请输入11位手机号码" id="tel"  maxlength="11" name="phone">
+				</li>
+				<li>
+					<p>邮箱:&nbsp;&nbsp;&nbsp;</p>
+					<input type="email" placeholder="请输邮箱地址" id="email" name="email" >
+				</li>
+				<li style="margin-bottom: 0;">
+					<p>验证码:</p>
+					<input type="text" placeholder="请输入验证码" id="yzm" maxlength="6" name="code">
+					<span class="dtyzm">
+					</span>
+				</li>
+				<p class="Agreement">
+					<input type="checkbox" name="servItems" value="" checked >
+					我已阅读并同意<a href="./ServiceA.html">《用户服务协议》</a><a href="./ServiceB.html">《网络游戏服务格式化协议必备条款》</a>
+				</p>
+				<li>
+					<button id="btninfos"  type="submit">立即注册</button>
+				</li>
+			</ul>
+		</div>
+		
+		<!-- footer -->
+		<div id="footer">
+			<div class="footerCont">
+				<ul class="L">
+					<img src="./images/S_icon1.png" alt="">
+				</ul>
+				<ul class="R">
+					<li style="color:#8c95a1">
+						<span style="color:red"> 本公司游戏产品适合18岁以上成年人使用。 </span> &nbsp;&nbsp;&nbsp;&nbsp;客服热线： (0571)8509-6870 &nbsp;&nbsp;罗女士
+					</li>
+					<li style="color:#606060">
+						COPYRIGHT © 2017 – 2018 SUPERTECH. ALL RIGHTS RESERVED。<span style="color:#8c95a1">浙ICP备18003397号 杭州市余杭区仓前海创大厦A幢802 </span> 
+					</li>
+					<li style="color:#606060">
+						抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防上当受骗。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+
+		
+	</body>
+<script>
+$(function(){
+	$('#btninfos').click(function(){
+		var nickname = $('input[name=nickname]').val();
+		var paswrd = $('input[name=paswrd]').val();
+		var conf = $('input[name=conf]').val();
+		var realname = $('input[name=realname]').val();
+		var phone = $('input[name=phone]').val();
+		var idcard = $('input[name=idcard]').val();
+		var email = $('input[name=email]').val();
+		var code = $('input[name=code]').val();
+		var servItems = $('input[name=servItems]').is(':checked');
+	  
+		if(nickname == ''){
+			alert('用户名不能为空');
+			$('input[name=nickname]').addClass('error').focus();
+			return false;
+		}else{
+			$('input[name=nickname]').removeClass('error').focus();
+		}
+
+		if(paswrd == ''){
+			alert('密码不能为空');
+			$('input[name=paswrd]').addClass('error').focus();
+			return false;
+		}else{
+			$('input[name=paswrd]').removeClass('error').focus();
+		}
+
+		if(conf == ''){
+			alert('确认密码不能为空');
+			$('input[name=conf]').addClass('error').focus();
+			return false;
+		}else{
+			$('input[name=conf]').removeClass('error').focus();
+		}
+
+		if(realname == ''){
+			alert('姓名不能为空');
+			$('input[name=realname]').addClass('error').focus();
+			return false;
+		}else{
+			$('input[name=realname]').removeClass('error').focus();
+		}
+		
+		if(idcard == ''){
+			alert('身份证号不能为空');
+			$('input[name=idcard]').addClass('error').focus();
+			return false;
+		}else{
+			$('input[name=idcard]').removeClass('error').focus();
+		}
+
+		var idcard_reg = /^\d{6}(18|19|20)?\d{2}(0[1-9]|1[12])(0[1-9]|[12]\d|3[01])\d{3}(\d|X)$/i;
+		if(!idcard_reg.test(idcard)){
+			alert('身份证号格式错误');
+			$('input[name=idcard]').addClass('error').focus();
+			return false;
+		}else{
+			$('input[name=idcard]').removeClass('error').focus();
+		}
+
+		if(phone == ''){
+			alert('手机号不能为空');
+			$('input[name=phone]').addClass('error').focus();
+			return false;
+		}else{
+			$('input[name=phone]').removeClass('error').focus();
+		}
+
+		if(conf !== paswrd){
+			alert('两次密码不一致');
+			$('input[name=conf]').addClass('error').focus();
+			return false;
+		}else{
+			$('input[name=conf]').removeClass('error').focus();
+		}
+		if(email == ''){
+			alert('邮箱不能为空');
+			$('input[name=email]').addClass('error').focus();
+			return false;
+		}else{
+			$('input[name=email]').removeClass('error').focus();
+		}
+
+		if(code == ''){
+			alert('验证码不能为空');
+			$('input[name=code]').addClass('error').focus();
+			return false;
+		}else{
+			$('input[name=code]').removeClass('error').focus();
+		}
+
+		if(!servItems){
+			alert('未勾选同意条款');
+			return false;
+		}
+		// return true;
+			alert('系统维护中！');
+
+	})
+
+	$('.dtyzm').addClass('bg1')
+	$('.dtyzm').click(function(){
+		$(this).toggleClass('bg1').toggleClass('bg2');
+	})
+
+})
+
+</script>
+</html>

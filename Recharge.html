@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>沙城烟云</title>
+		<script src="js/jquery-2.2.4.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="" type="text/javascript" charset="utf-8"></script>
+
+		<link rel="stylesheet" href="css/recharge.css" />
+		
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div id="header">
+				<ul class="headerCont">
+					<li><a href="./index.html">官网首页</a></li>
+					<li><a href="./GamesHub.html">游戏中心</a></li>
+					<li><a href="./Recharge.html" style="color:#DA5B00;">游戏充值</a></li>
+					<li id="S_logo">
+						<a href="./index.html">
+							<img src="./images/S_logo.png" alt="">
+						</a>
+					</li>
+					<li><a href="./Custody.html">家长监护</a></li>
+					<li><a href="./Contactus.html"  >联系我们</a></li>
+					<li class="btns" style="text-align: unset;">
+						<a href="./Login.html" class="login">登录</a>
+						<a href="./Register.html" class="register">注册</a>
+					</li>
+				</ul>
+			</div>
+		
+		
+		<!-- main -->
+		<div id="main">
+			<div class="gameL">
+				<div  class="gameL_01">
+					<a href="./file/沙城烟云.rar">
+						<img src="./images/dl_01.jpg" alt="">
+					</a>
+				</div>
+				<div class="gameL_02">
+					<img src="./images/games_02.jpg" alt="">
+				</div>
+			</div>
+			<div class="gameR">
+				<h3>游戏充值</h3>
+				<div class="infos">
+					<ul class="infoss">
+						<h5>超金币是超级科技游戏平台发行的虚拟商品，游戏中的元宝钻石等商品可使用超金币兑换</br>兑换比例<span> 1元=20 </span>超金币</h5>
+						<li>
+							<p>充值账号</p>
+							<input type="text" placeholder="请输入充值账号" id="num" name="number">
+						</li>
+						<li>
+							<p>确定账号</p>
+							<input type="text" placeholder="请再次输入充值账号" id="num2" name="number2">
+						</li>
+						<li class="pricenum">
+							<p>充值金额</p>
+							<label  >
+								<input  type="radio"  name=" money"  value="1" checked>1元
+							</label>
+							<label >
+								<input  type="radio"  name=" money" value="10">10元
+							</label>
+							<label >
+								<input  type="radio"   name=" money" value="50">50元
+							</label>
+							<label >
+								<input  type="radio"   name=" money" value="100">100元
+							</label>
+						</li>
+						 <li  class="Pay ">
+							<p>充值方式</p>
+							<label  >
+								<input  type="radio"  name=" mode" value="支付宝" checked>支付宝
+							</label>
+								<br/>
+							<label style="margin-left: 100px; margin-top: 35px; display: inline-block;">
+								<input  type="radio"  name=" mode" value="微信">微信
+							</label>
+						 </li>
+						 <li>
+							 <button id="btninfos">确认</button>
+						 </li>
+					</ul>
+
+
+
+
+				</div>
+
+
+			</div>
+			
+		</div>
+		
+		<!-- footer -->
+		<div id="footer">
+			<div class="footerCont">
+				<ul class="L">
+					<img src="./images/S_icon1.png" alt="">
+				</ul>
+				<ul class="R">
+					<li style="color:#8c95a1">
+						<span style="color:red"> 本公司游戏产品适合18岁以上成年人使用。 </span> &nbsp;&nbsp;&nbsp;&nbsp;客服热线： (0571)8509-6870 &nbsp;&nbsp;罗女士
+					</li>
+					<li style="color:#606060">
+						COPYRIGHT © 2017 – 2018 SUPERTECH. ALL RIGHTS RESERVED。<span style="color:#8c95a1">浙ICP备18003397号 杭州市余杭区仓前海创大厦A幢802 </span> 
+					</li>
+					<li style="color:#606060">
+						抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防上当受骗。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+
+		
+	</body>
+<script>
+$(function(){
+	$('#btninfos').click(function(){
+		var number = $('input[name=number]').val();
+		var number2 = $('input[name=number2]').val();
+
+		var code = $('input[name=code]').val();
+		if(number == ''){
+			alert('账号不能为空');
+			$('input[name=number]').addClass('error').focus();
+			return false;
+		}else{
+			$('input[name=number]').removeClass('error').focus();
+		}
+		if(number2 == ''){
+			alert('确认账号不能为空');
+			$('input[name=number2]').addClass('error').focus();
+			return false;
+		}else{
+			$('input[name=number2]').removeClass('error').focus();
+		}
+		if(number !== number2){
+			alert('两次账号不一致');
+			$('input[name=number2]').addClass('error').focus();
+			return false;
+		}else{
+			$('input[name=number2]').removeClass('error').focus();
+		}
+			alert('系统维护中！');
+	})
+})
+
+
+
+
+</script>
+</html>
